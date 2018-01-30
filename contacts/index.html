@@ -1434,7 +1434,7 @@
 		}
 
 		.scheme_default .textwidget {
-			width : 360px ;
+			width : 337px ;
 			color: #928f88
 		}
 
@@ -5663,7 +5663,7 @@
 		}
 
 		.scheme_dark .textwidget {
-			width : 100px ;
+			width : 90px ;
 			color: #928f88
 		}
 
@@ -9314,6 +9314,9 @@
 			}
 		</style>
 	</noscript>
+	<link rel="stylesheet" type="text/css" href="../EstilosMenu.css">
+	<link rel="stylesheet" type="text/css" href="../ResponsiveMenu.css">
+	<link rel="stylesheet" type="text/css" href="../icommon.css">
 </head>
 
 <body class="page-template-default page page-id-197 custom-background body_tag scheme_default blog_mode_page body_style_wide is_single sidebar_hide expand_content remove_margins header_style_header-custom-43 header_position_default menu_style_top no_layout wpb-js-composer js-comp-ver-5.1.1 vc_responsive">
@@ -9321,10 +9324,32 @@
 
 	<div class="body_wrap">
 
+		<!--creacion del menu de las empresas-->
+	<div>
+			<header id="vector" >
+				<section id="logo9">
+					<h1><a href="http://www.grupodionys.com.pe/"><img src="../images/grupo.png" ></a></h1>
+					<span id="abrir_menu" class="icon-menu">
+						
+					</span>
+				</section>
+				<section id="menu">
+					<div><span id="cerrar_menu" class="icon-shrink2"></span> </div>
+					<ul>
+						<a href="http://complejo.grupodionys.com.pe/"><img src="../images/complejo.png"></a>
+						<a href="http://intercompany.grupodionys.com.pe/" class="toboganes"><img src="../images/intercompany.png"></a>
+						<a href="http://toboganes.grupodionys.com.pe/"><img src="../images/toboganes.png"></a>
+						<a href="http://lenas.grupodionys.com.pe/"><img src="../images/lenas.png"></a>
+					</ul>
+				</section>
+			</header>
+		</div>
+		<!--fin de la creacion de las empresas-->
+
 		<div class="page_wrap">
 
-			<header class="top_panel top_panel_custom top_panel_custom_43 without_bg_image scheme_default">
-				<div class="vc_row wpb_row vc_row-fluid sc_layouts_row sc_layouts_row_type_compact sc_layouts_row_fixed">
+			<header class="top_panel top_panel_custom top_panel_custom_43 without_bg_image scheme_default" style="margin-top: 40px !important">
+				<div class="vc_row sc_layouts_row sc_layouts_row_type_compact sc_layouts_row_fixed">
 					<div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
 						<div class="vc_column-inner ">
 							<div class="wpb_wrapper">
@@ -9394,7 +9419,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="vc_row wpb_row vc_row-fluid vc_custom_1484738210442 vc_row-has-fill sc_layouts_row sc_layouts_row_type_normal sc_layouts_hide_on_frontpage scheme_dark">
+				
+			</header>
+
+			
+			<div class="vc_row wpb_row vc_row-fluid vc_custom_1484738210442 vc_row-has-fill sc_layouts_row sc_layouts_row_type_normal sc_layouts_hide_on_frontpage scheme_dark">
 					<div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column sc_layouts_column_align_center sc_layouts_column_icons_position_left">
 						<div class="vc_column-inner ">
 							<div class="wpb_wrapper">
@@ -9422,7 +9451,9 @@
 						</div>
 					</div>
 				</div>
-			</header>
+				
+			
+			
 			<div class="menu_mobile_overlay"></div>
 			<div class="menu_mobile menu_mobile_fullscreen scheme_dark">
 				<div class="menu_mobile_inner">
@@ -9819,7 +9850,7 @@
 			<!-- </.page_content_wrap> -->
 
 			<footer class="footer_wrap footer_custom footer_custom_33 scheme_default">
-				<div class="vc_row wpb_row vc_row-fluid vc_custom_1484813059302 sc_layouts_row sc_layouts_row_type_compact">
+				<div class=" wpb_row vc_row-fluid vc_custom_1484813059302 sc_layouts_row sc_layouts_row_type_compact">
 					<div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
 						<div class="vc_column-inner ">
 							<div class="wpb_wrapper">
@@ -9940,6 +9971,7 @@
 			}
 		});
 	</script>
+	
 	<style type="text/css" data-type="trx_addons-custom-css">
 		.vc_custom_1484738210442 {
 			background: #f7f7f7 url(../wp-content/uploads/2016/12/title_bg1623.jpg?id=353) !important;
@@ -10037,6 +10069,21 @@
 	<script type='text/javascript' src='../wp-content/plugins/trx_addons/cpt/layouts/shortcodes/menu/jquery.slidemenu.js'></script>
 	<script type='text/javascript' src='http://maps.googleapis.com/maps/api/js'></script>
 	<script type='text/javascript' src='../wp-content/plugins/trx_addons/shortcodes/googlemap/googlemap.js'></script>
+	<script type="text/javascript">
+		
+		
+		jQuery(function ($){
+	
+	$("#abrir_menu").click(function(){
+		$("#menu").animate({"right":"0"});
+	});
+	
+	$("#cerrar_menu").click(function(){
+		$("#menu").animate({"right":"-100%"});
+	});
+	});
+	
+	</script>
 	<a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up" title="Scroll to top"></a>
 </body>
 

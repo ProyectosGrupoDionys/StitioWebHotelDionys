@@ -9356,6 +9356,9 @@
 			}
 		</style>
 	</noscript>
+	<link rel="stylesheet" type="text/css" href="../../EstilosMenu.css">
+	<link rel="stylesheet" type="text/css" href="../../ResponsiveMenu.css">
+	<link rel="stylesheet" type="text/css" href="../../icommon.css">
 </head>
 
 <body class="cpt_services-template-default single single-cpt_services postid-224 custom-background body_tag scheme_default blog_mode_services body_style_wide  is_stream blog_style_excerpt sidebar_hide expand_content remove_margins header_style_header-custom-43 header_position_default menu_style_top no_layout wpb-js-composer js-comp-ver-5.1.1 vc_responsive">
@@ -9363,9 +9366,31 @@
 
 	<div class="body_wrap">
 
+		<!--creacion del menu de las empresas-->
+	<div>
+			<header id="vector" >
+				<section id="logo9">
+					<h1><a href="http://www.grupodionys.com.pe/"><img src="../../images/grupo.png" ></a></h1>
+					<span id="abrir_menu" class="icon-menu">
+						
+					</span>
+				</section>
+				<section id="menu">
+					<div><span id="cerrar_menu" class="icon-shrink2"></span> </div>
+					<ul>
+						<a href="http://complejo.grupodionys.com.pe/"><img src="../../images/complejo.png"></a>
+						<a href="http://intercompany.grupodionys.com.pe/" class="toboganes"><img src="../../images/intercompany.png"></a>
+						<a href="http://toboganes.grupodionys.com.pe/"><img src="../../images/toboganes.png"></a>
+						<a href="http://lenas.grupodionys.com.pe/"><img src="../../images/lenas.png"></a>
+					</ul>
+				</section>
+			</header>
+		</div>
+		<!--fin de la creacion de las empresas-->
+
 		<div class="page_wrap">
 
-			<header class="top_panel top_panel_custom top_panel_custom_43 without_bg_image with_featured_image scheme_default">
+			<header class="top_panel top_panel_custom top_panel_custom_43 without_bg_image with_featured_image scheme_default" style="margin-top: 40px !important">
 				<div class="vc_row wpb_row vc_row-fluid sc_layouts_row sc_layouts_row_type_compact sc_layouts_row_fixed">
 					<div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
 						<div class="vc_column-inner ">
@@ -9434,7 +9459,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="vc_row wpb_row vc_row-fluid vc_custom_1484738210442 vc_row-has-fill sc_layouts_row sc_layouts_row_type_normal sc_layouts_hide_on_frontpage scheme_dark">
+				
+			</header>
+			<div class="vc_row wpb_row vc_row-fluid vc_custom_1484738210442 vc_row-has-fill sc_layouts_row sc_layouts_row_type_normal sc_layouts_hide_on_frontpage scheme_dark">
 					<div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column sc_layouts_column_align_center sc_layouts_column_icons_position_left">
 						<div class="vc_column-inner ">
 							<div class="wpb_wrapper">
@@ -9466,7 +9493,6 @@
 						</div>
 					</div>
 				</div>
-			</header>
 			<div class="menu_mobile_overlay"></div>
 			<div class="menu_mobile menu_mobile_fullscreen scheme_dark">
 				<div class="menu_mobile_inner">
@@ -10377,7 +10403,7 @@
 															<div class="widget widget_text">
 																<div class="textwidget">
 																	
-																		<p>© 2017 Todos los derechos reservados | <a href="http://www.grupodionys.com.pe/"> Grupo Dionys</a> </p>
+																		<p>© 2018 Todos los derechos reservados | <a href="http://www.grupodionys.com.pe/"> Grupo Dionys</a> </p>
 																</div>
 															</div>
 														</div>
@@ -10651,6 +10677,21 @@ function addEventListener(element, event, handler) {
 	<!--[if lte IE 9]>
 <script type='text/javascript' src='http://cityhostel.axiomthemes.com/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.1.0'></script>
 <![endif]-->
+<script type="text/javascript">
+	
+	
+	jQuery(function ($){
+
+$("#abrir_menu").click(function(){
+	$("#menu").animate({"right":"0"});
+});
+
+$("#cerrar_menu").click(function(){
+	$("#menu").animate({"right":"-100%"});
+});
+});
+
+</script>
 	<a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up" title="Scroll to top"></a>
 </body>
 
